@@ -7,11 +7,13 @@ public class CriarTarefa extends JFrame {
 
 
     public CriarTarefa(){
-        setTitle("Caixa de entrada");
+
+        setTitle("Cadastro de tarefas");
         setSize(400,500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         configurarJanela();
         setVisible(true);
+        
     }
 
     public void configurarJanela(){
@@ -44,7 +46,9 @@ public class CriarTarefa extends JFrame {
         //* Configurar posição dos aspectos do programa*/
      
         TheBox.setVerticalGroup(
+
             TheBox.createSequentialGroup()
+
                     .addComponent(labelCaixaEntrada)
                     .addComponent(areaTarefa)
                     .addComponent(labelPrioridade)
@@ -55,7 +59,9 @@ public class CriarTarefa extends JFrame {
                             .addComponent(botaoSalvar))
         );
         TheBox.setHorizontalGroup(
+
             TheBox.createParallelGroup()
+
                         .addComponent(labelCaixaEntrada)
                         .addComponent(areaTarefa)
                         .addComponent(labelPrioridade)
@@ -66,6 +72,7 @@ public class CriarTarefa extends JFrame {
                                 .addComponent(botaoSalvar))
                                     
             );
+            
             add(painel);
     }
 }
